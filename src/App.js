@@ -1,23 +1,17 @@
-import logo from './logo.svg';
+import React from 'react';
+import Nav from './assets/components/Nav';
+// यो nav component import गर्या हो कि Nav.js file import गर्या हो बुजिन
+// मलाई चाँहि nav component गर्या जस्तो लागि छ
+import Herosection from './assets/components/Herosection';
 import './App.css';
+import './assets/css/nav.css';
+import './assets/css/Herosection.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Nav />
+      {/* <Herosection /> */}
     </div>
   );
 }
