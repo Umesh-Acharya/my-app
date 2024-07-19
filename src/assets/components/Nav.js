@@ -84,9 +84,9 @@ function Nav() {
 
 
                 <ul className="sci">
-                    <li key="facebook"><a href="#"><img src={facebook} alt="facebook" /></a></li>
-                    <li key="twitter"><a href="#"><img src={twitter} alt="twitter" /></a></li>
-                    <li key="instagram"><a href="#"><img src={instagram} alt="instagram" /></a></li>
+                    <li><a href="#"><img src={facebook} alt="facebook" /></a></li>
+                    <li><a href="#"><img src={twitter} alt="twitter" /></a></li>
+                    <li><a href="#"><img src={instagram} alt="instagram" /></a></li>
                 </ul>
             </section>
         </div>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import logo from '../img/logo.png';
 import img1 from '../img/img1.png';
 import img2 from '../img/img2.png';
@@ -11,27 +11,13 @@ import twitter from '../img/twitter.png';
 import instagram from '../img/instagram.png';
 import '../css/nav.css';
 
-function Nav() {
-    const [mainImage, setMainImage] = useState(img1);
-    /*
-       const [mainImage, setMainImage] = useState(img1);
-        Here mainImage is a state variable which value is image1 which is initial value for our website
-        but setMainImage is a function to change the initial image which is currently displaying
-        
-         */
-
-    function imgSlider(imgPath) {
-        //    // Purpose of this imgSlider is to change  the mainImage it dose so by calling another function called setMainImage
-        setMainImage(imgPath);
-        // This is not regual function it is used because i use the hook name useState
-        // useState is a way to mange and update data
-
-    }
 
 
 
+function Landingpage() {
     return (
-        <div className="Nav">
+        <div className="body">
+            {/* ///////////////////////////////////////////////////////////////// */}
             <section>
                 <div className="circle"></div>
                 <header>
@@ -45,8 +31,11 @@ function Nav() {
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </header>
+                {/* ////////////////////////////////////////////////////////////////////////////////// */}
 
                 <div className="content">
+
+
                     <div className="textBox">
                         <h2>It's not just Coffee<br />It's <span>Starbucks</span></h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
@@ -55,23 +44,24 @@ function Nav() {
                         <a href="#">Learn More</a>
                     </div>
                     <div className="imgBox">
-                        <img src={mainImage} alt="main" className="starbucks" />
+                        <img src={img1} className="starbucks" />
                     </div>
                 </div>
                 <ul className="thumb">
                     <li>
-                        <img src={thumb1} alt="thumb1" onClick={() => imgSlider(img1)} />
+                        <img src={thumb1} />
                     </li>
                     <li>
-                        <img src={thumb2} alt="thumb2" onClick={() => imgSlider(img2)} />
+                        <img src={thumb2} alt="thumb2" />
                     </li>
                     <li>
-                        <img src={thumb3} alt="thumb3" onClick={() => imgSlider(img3)} />
+                        <img src={thumb3} alt="thumb3" />
                     </li>
                 </ul>
+
                 <ul className="sci">
                     <li key="facebook"><a href="#"><img src={facebook} alt="facebook" /></a></li>
-                    <li key="twitter"><a href="#"><img src={twitter} alt="twitter" /></a></li>
+                    <li k4ey="twitter"><a href="#"><img src={twitter} alt="twitter" /></a></li>
                     <li key="instagram"><a href="#"><img src={instagram} alt="instagram" /></a></li>
                 </ul>
             </section>
@@ -79,4 +69,4 @@ function Nav() {
     );
 }
 
-export default Nav;
+export default Landingpage;

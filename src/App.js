@@ -6,12 +6,20 @@ import Herosection from './assets/components/Herosection';
 import './App.css';
 import './assets/css/nav.css';
 import './assets/css/Herosection.css';
-
+import NavigationBar from './assets/components/navigationbar'
+import Textbox from './assets/components/contents'
+import FooterAndSocial from './assets/components/footerAndSocial';
 function App() {
   return (
     <div className="App">
-      <Nav />
-      {/* <Herosection /> */}
+      <Herosection />
+
+      {/* <NavigationBar /> */}
+      {/* <Textbox /> */}
+      {/* <FooterAndSocial /> */}
+
+      {/* <Nav /> */}
+
     </div>
   );
 }
